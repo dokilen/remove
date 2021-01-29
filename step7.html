@@ -1,0 +1,315 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Removing Objects</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000
+}
+body {
+	background-color: #d0d0d0;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.style2 {
+	color: #660000;
+	font-weight: bold;
+	font-style: italic;
+}
+table.MsoTableGrid {
+	border: 1.0pt solid windowtext;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#C0C0C0" vlink="#0000FF" link="#0000FF" alink="#0000FF">
+<Font face="Times New Roman">
+<table border="0" cellspacing="0" width="100%" height="1" bordercolor="#111111" cellpadding="0">
+  <tr>
+    <td width="100%" align="center" height="1"><font face="Times New Roman">
+      <p align="center"> <a href="step1.html"><font size="2">Step 1: Intro</font></a><font size="2"> <b>&nbsp;| </b> &nbsp;<a href="step2.html">Step 2: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Step 3: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Step 4: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Step 5: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Step 6: Content-Aware Move</a>&nbsp; |&nbsp; Step 7: Content Aware Fill&nbsp; |&nbsp; <a href="step8.html"> Step 8: Clone Stamp</a>&nbsp; 
+		|&nbsp; <a href="step9.html">Step 9: Combining Tools</a><br>
+        </font>&nbsp;&nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" height="1"><font size="6"><b>Content Aware Fill</b></font></td>
+  </tr>
+</table>
+<p class="MsoNormal" style="line-height:
+normal"> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"> 
+As mentioned in the previous Step, the Content Aware Fill is not actually a tool 
+on the toolbar, but instead works by using the Fill command. Normally, the Fill 
+command simply fills a selection with color, but when using Content Aware Fill, Photopes looks at the pixels surrounding a selection and fills that selection area with something that matches 
+what is around it. This time, Photopea does not try to blend the pixels together, 
+  so this method works great on areas with lines and edges. Working with the 
+  Content Aware Fill works slightly different from the other tools that we have 
+  used, so let’s get some practice with it.</span></p>
+<ol>
+	<li>
+	<p class="MsoListParagraphCxSpFirst" style=" line-height: normal;    ">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click the Lasso Tool...<br>
+	</span>
+	<img border=0 width=36 height=64
+src="7/01.jpg" v:shapes="Picture_x0020_55"></p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Staying in the same region of the image 
+	that we have been working with, click and drag to make a selection area 
+  of the people indicated below...<br></span>
+	<img border=0 width=872 height=302
+src="7/02.jpg" v:shapes="Picture_x0020_56"><br>
+	Remember that if we want to select two non-connected areas that you first 
+	draw a circle around one area, like the person on the left, and then press 
+	and hold the Shift key as you draw a circle around the person on the right</p></li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Be 
+careful here that you draw your selection area around only the items that you 
+want to remove. If you try to draw a large circle around both people like 
+this...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+	<img border=0
+src="7/05.jpg" v:shapes="Picture_x0020_56"></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">When you 
+apply the Content Aware Fill you may get something like this...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+	<img border=0
+src="7/06.jpg" v:shapes="Picture_x0020_56" width="449" height="226"></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">This is 
+obviously not an ideal result because we will have to take the time to 
+replace the missing line segment. It would be great if we could remove the 
+people and didn't have to worry about fixing a broken line. Luckily for us, if 
+we make a good enough selection, like the one in direction 2 above, Photopea 
+will help us out with the line. Keep going to see how this works.</p>
+<ol start="3">
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click Edit on the menu bar and then click Fill...<br>
+	</span>
+	<img border=0 width=239 height=380
+src="7/03.jpg" v:shapes="Picture_x0020_58"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><br>This will open the Fill window...<br>
+	</span>
+	<img border=0 width=323 height=209
+src="7/04.jpg" v:shapes="Picture_x0020_59"></p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Set 
+  the options to match the image above</span></p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click OK – notice that people are now gone, but 
+	that Photopea has continued the line...<br>
+	</span>
+	<img border=0 width=837 height=283
+src="7/07.jpg" v:shapes="Picture_x0020_60"><br>
+	The people have vanished, but the line remains</p></li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Photopea was able to recognize by looking at the surrounding pixels that the 
+  people do not belong, but since there is a line running through the rest of the 
+  image, Photopea continued the line. As a quick aside here, if it did not work 
+for you and you have something like this...</span></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+	<img border=0 width=528 height=288
+src="7/08.jpg" v:shapes="Picture_x0020_60"></p>
+</font>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Don't 
+panic - you didn't do anything wrong. Photopea can be a little picky with how it 
+applies the Content Aware Fill.&nbsp; Simply redoing the Content Aware Fill 
+usually fixes this issue.</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Follow 
+the directions below if Photopea did not remove one or both of your people.</p>
+</font>
+<Font face="Times New Roman">
+<ol type="I">
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+	<Font face="Times New Roman,serif">Press Ctrl+Z to undo the Fill - this 
+	should place both people back into your image</font></p>
+</font>
+	<Font face="Times New Roman,serif">
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Press Shift+F5 to reapply the Content Aware Fill</p>
+	</li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">If 
+	it doesn't work again, try reapplying the Content Aware Fill 
+	several times</p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">If 
+	after reapplying the Content Aware Fill multiple times you still do not have 
+	a complete line, you will need to deselect (Ctrl+D) and redraw your 
+	selection area with the Lasso Tool - try to be a little more accurate with 
+	your selection this time</p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Press Shift+F5 to reapply the Content Aware Fill</p>
+	</li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+<Font face="Times New Roman">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+When the people are gone and the line looks good, press Ctrl+D to deselect the image</span></font></p>
+	</li></font>
+</ol>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Keep in 
+mind when using the Content Aware Fill that Photopea is not blending anything 
+together this time. It is simply looking at the area surrounding your selection 
+and trying to use that area to replace your selection. Also be aware that it is 
+not necessary for the area around the selection to be simple like with the image 
+we are using (we just have gray concrete and a white line). For example, we can use Content 
+Aware Fill on images like the one below...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=679 height=472
+src="7/09.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">As long 
+as there are similar elements around what we are removing (in the picture above, 
+notice that there are trees, sky, and water on both sides of the balloon), Photopea can handle filling in the spot. 
+If you look closely, you can see how Photopea replaced the balloon...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=239 height=150
+src="7/19.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">The 
+black outline is where the balloon was, and the red arrows are showing that to 
+remove the balloon, Photopea simply made a copy of the tree on the left and 
+placed it in the center over the balloon. This method works great if things are 
+generally the same around the selection, but be careful. If there 
+is a collection of different objects around your selection you will get 
+unexpected results. Consider the image below...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=595 height=333
+src="7/10.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Let's 
+say we want to remove the red car with the tan roof in the middle. If we make a 
+selection with the Lasso Tool...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=597 height=334
+src="7/11.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">And then 
+apply the Content Aware Fill, this is what we get...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=596 height=333
+src="7/12.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Notice 
+that not only did we not get a picture of the junkyard with the car missing, 
+but that Photopea simply pulled parts of other cars from around our selection 
+and used them to cover the original car...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=596 height=333
+src="7/14.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">The 
+point here is that if what we are removing is surrounded by other objects then 
+the Content Aware Fill will not work. But if our subject has pretty much the 
+same thing on both sides...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=661 height=355
+src="7/15.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=934 height=287
+src="7/16.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=703 height=335
+src="7/17.jpg" v:shapes="Picture_x0020_60"></font></p>
+</font>
+<Font face="Times New Roman">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="left">
+Then we can get good results.
+It even works on images such as the one below...</p>
+</font>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=919 height=336
+src="7/18.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Photopea 
+was able to recognize that there were windows on either side of the cat and did a pretty 
+good job of removing him. Yeah, the brick lines are not perfect, but it is 
+much easier to use Content Aware Fill to remove the cat and then correct those 
+lines using one of the tools we've discussed then it is to try and remove the cat through other means.</p>
+<hr>
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">While 
+Content Aware Fill is an incredibly useful tool, as we have seen it does have 
+some issues. Here are a few things to keep in mind while use Content Aware Fill:</p>
+<ol type="A">
+	<li>
+	<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">As we 
+	showed above with the junkyard image, Photopea has a problem with images 
+	that have lots of different objects and details surrounding your selection</p>
+	</li>
+	<li>
+	<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">The 
+	larger the object being removed the lower the quality of the final result</p>
+	</li>
+	<li>
+	<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">
+	Patterns and lines (such as the bricks in the cat photo) may be distorted 
+	and not line up correctly (this is usually easy to fix)</p></li>
+	<li>
+	<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">The 
+	selection that you create with the Lasso Tool is important - changing the 
+	selection even slightly can result in a vastly different outcome</p></li>
+	<li>
+	<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">Even 
+	if the end results are not perfect, using Content Aware Fill can be a quick 
+	and easy first step that allows you to easy clean up the image using any of 
+	the other tools we have covered (fixing the brick lines in the cat image, for 
+	example, is super easy, barely an inconvenience)</p></li>
+	<li>
+	<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">It is 
+	very common for there to be additional clean-up after using Content Aware 
+	Fill, especially if the background is 'busy', so don't be surprised</p>
+	</li>
+</ol>
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">Let's take 
+a minute now to practice using Content Aware Fill.</p>
+<ol start="6">
+	<li>
+	Go 
+	around the image and remove any people or objects that Content Aware 
+	Fill will 
+	be quick and effective on<br>
+	HINT: Remember that Content Aware Fill works best when the surrounding area 
+	is similar on both sides</li>
+</ol>
+</font>
+<Font face="Times New Roman">
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">Let's save 
+our work up to this point.</p></font>
+<ol start="7">
+<li>
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">Click File and then click Save as PSD... and save the image in the Remove 
+    Objects folder as remove.psd</p></li>
+</ol>
+<p>For our final tool, we will be using the Clone Stamp, which is kind of a tool 
+of last resort. Head over to Step 8 to see how it works.</p>
+<hr>
+<div align="center">
+  <center>
+    <table border="0" bordercolor="#111111" width="100%" cellpadding="0">
+      <tr>
+        <td><font face="Times New Roman" size="2">
+          <p align="center"> <a href="step1.html">Step 1: Intro</a> <b>|</b> <a href="step2.html">Step 2: Brush/Pencil</a> <b>|</b> <a href="step3.html">Step 3: Spot Healing Brush</a> | <a href="step4.html">Step 4: Healing Brush</a> <b>|</b> <a href="step5.html">Step 5: 
+            Patch</a> <b>|</b> <a href="step6.html">Step 6: Content-Aware Move</a> | Step 7: Content Aware Fill | <a href="step8.html"> Step 8: Clone Stamp</a> 
+			| <a href="step9.html">Step9: Combining Tools</a></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</font>
+</body>
+</html>
