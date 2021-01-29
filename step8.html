@@ -1,0 +1,194 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Removing Objects</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000
+}
+body {
+	background-color: #d0d0d0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.style2 {
+	color: #660000;
+	font-weight: bold;
+	font-style: italic;
+}
+table.MsoTableGrid {
+	border: 1.0pt solid windowtext;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#C0C0C0" vlink="#0000FF" link="#0000FF" alink="#0000FF">
+<Font face="Times New Roman">
+<table border="0" cellspacing="0" width="100%" height="1" bordercolor="#111111" cellpadding="0">
+  <tr>
+    <td width="100%" align="center" height="1"><font face="Times New Roman">
+      <p align="center"> <a href="step1.html"><font size="2">Step 1: Intro</font></a><font size="2"> <b>&nbsp;| </b> &nbsp;<a href="step2.html">Step 2: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Step 3: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Step 4: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Step 5: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Step 6: Content-Aware Move</a>&nbsp; |&nbsp; <a href="step7.html">Step 7: Content Aware Fill</a>&nbsp; |&nbsp; Step 8: Clone&nbsp; 
+		|&nbsp; <a href="step9.html">Step 9: Combining Tools</a><br>
+        </font>&nbsp;&nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" height="1"><font size="6"><b>Clone Tool</b></font></td>
+  </tr>
+</table>
+<p class="MsoNormal" style="line-height:
+normal"> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Our 
+  final tool is a general use tool that can either blend in surrounding pixels or 
+  work along a line. We will take a look at how to do both.</span></p>
+<p class="MsoNormal" style="line-height:
+normal">
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">The 
+  Clone Tool works similar to the Healing Brush Tool in that we begin by 
+  defining an area that we wish to clone. We then draw over the unwanted area to 
+  replace it with the source area. Yeah, I know, that explanation is not very 
+clear. The truth is that it is kinda hard to explain exactly how this tool 
+works, so let's just use it and you will quickly understand what is going on.</span></p>
+<ol>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+	Click the Clone Tool...<br>
+	</span>
+	<img border=0 width=37 height=59
+src="8/01.jpg" v:shapes="Picture_x0020_61"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Set 
+  the Clone Tool options bar to match the image below...<br></span>
+	<img border=0 width=716 height=34
+src="8/02.jpg" v:shapes="Picture_x0020_66"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Set 
+  the Brush to Soft Mechanical</span></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Locate the area of the image indicated below...<br></span>
+	<img border=0 width=288 height=272
+src="8/03.jpg" v:shapes="Picture_x0020_62"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Zoom in on the person in red shown below...<br>
+	</span>
+	<img border=0 width=433 height=144
+src="8/04.jpg" v:shapes="Picture_x0020_63"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Press and hold the Alt key and click where indicated below...<br>
+	</span>
+	<img border=0 width=433 height=144
+src="8/05.jpg" v:shapes="Picture_x0020_64"></li>
+	<li>Release the Alt key</li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click to draw over the person in red 
+	- note that he is replaced with the image part at the spot you clicked in 
+	direction 6 above...<br></span>
+	<img border=0 width=434 height=144
+src="8/06.jpg" v:shapes="Picture_x0020_65"></li>
+</ol>
+</font>
+<Font face="Times New Roman,serif">
+<p class="MsoNormal" style="line-height:
+normal">
+What is going on here is really pretty simple. When you Alt+click a spot while 
+using the Clone Tool to tell Photopea to use that spot as source material. When 
+you begin to color over what you want to remove, you will notice that Photopea 
+places a small + sign on the spot that is using as source material to cover the 
+object you wish to get rid of. While removing the person in red, we are actually 
+making a copy of the building at the location we clicked in direction 6 above.
+</font><Font face="Times New Roman">
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">In 
+  this case, the person is easy to remove because using the soft mechanical brush means the 
+  edges of where we draw blends in with the existing texture. And since there is 
+a lot going on structurally at that spot, what we drew tends to blend in with 
+the surrounding area and we have a very difficult time figuring out where the 
+person in red was after we zoom out.</span></font></p>
+<p class="MsoNormal" style="line-height:
+normal">
+<Font face="Times New Roman">
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">The 
+Clone Tool is also very capable when it comes to removing objects next to a line 
+(or a building, or a tree, or anything else we don't want to destroy). We simply 
+need to change to a solid brush.</span></p>
+<ol start="9">
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">On 
+  the Clone Tool options bar, go into the Brush Preset picker and set the 
+  brush to Hard Round...<br></span>
+	<img border=0 width=249 height=216
+src="8/07.jpg" v:shapes="Picture_x0020_67"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Locate the following spot in the image...<br>
+	</span>
+	<img border=0 width=288 height=272
+src="8/08.jpg" v:shapes="Picture_x0020_68"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Zoom in on the object next to the line (is that a trash can?)...<br>
+	</span>
+	<img border=0 width=436 height=134
+src="8/09.jpg" v:shapes="Picture_x0020_69"><br>
+	Note that if you have already removed this object (and you should not have 
+	because considering where the object is and what's around it, none of the 
+	other tool will do a really a great job getting rid of it), simple move 
+	along the line to something that you have not removed</li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Alt+click 
+	a short distance away from the object...<br>
+	</span>
+	<img border=0 width=436 height=134
+src="8/10.jpg" v:shapes="Picture_x0020_70"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click and drag to remove the object – notice that since you are using a hard 
+  edged brush that you can draw right up to the line...<br></span>
+	<img border=0 width=438 height=135
+src="8/11.jpg" v:shapes="Picture_x0020_71"></li>
+</ol>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">The 
+Clone Tool is only really limited by your ability to find an area within the 
+image that serves as a good source of material to cover up the object you are 
+trying to get rid of. Realistically, we could have used the Clone Tool to remove 
+every person and object in the image we don't want (and there are some designers 
+and photographers who use the Clone Tool exclusively, but doing so would have 
+been very time consuming. The other tools and techniques that we have covered 
+generally make our lives easier by being quicker and easier than the Clone Tool. 
+Still, when one of the other tools does a less than stellar job, the Clone Tool 
+is always available to clean things up. The ability to control the brush shape 
+and size means we can get extremely precise with our work. </p>
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">As a quick 
+reminder, unlike most of the other tools we have used in this lesson, the Clone 
+Tool does not blend colors together. Instead, it is very simply replacing one 
+area with another. Know that while this keep us from having to worry about two 
+colors blending together, it means that there may be times when we have to 
+manually blend color together. If the the areas we are using are vastly different in color, 
+tone, tint, etc, you will get all kinds of strange results.</p>
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">Let's save 
+our work up to this point.</p>
+</font>
+<ol start="14">
+<li>
+Click File and then click Save as PSD... and save the image in the Remove 
+    Objects folder as remove.psd</li>
+</ol>
+<p>In the final Step of this lesson, we will take a look wrapping up our 
+Colosseum image and talk about using what we have learned to edit other image.</p>
+<hr>
+<div align="center">
+  <center>
+    <table border="0" bordercolor="#111111" width="100%" cellpadding="0">
+      <tr>
+        <td><font face="Times New Roman" size="2">
+          <p align="center"> <a href="step1.html">Step 1: Intro</a> <b>|</b> <a href="step2.html">Step 2: Brush/Pencil</a> <b>|</b> <a href="step3.html">Step 3: Spot Healing Brush</a> | <a href="step4.html">Step 4: Healing Brush</a> <b>|</b> <a href="step5.html">Step 5: 
+            Patch</a> <b>|</b> <a href="step6.html">Step 6: Content-Aware Move</a> | <a href="step7.html">Step 7: Content Aware Fill</a> | Step 8: Clone 
+			| <a href="step9.html">Step9: Combining Tools</a></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</font>
+</body>
+</html>
