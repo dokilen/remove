@@ -49,7 +49,7 @@ command simply fills a selection with color, but when using Content Aware Fill, 
 what is around it. This time, Photopea does not try to blend the pixels together, 
   so this method works great on areas with lines and edges. Working with the 
   Content Aware Fill works slightly different from the other tools that we have 
-  used, so let's get some practice with it.</span></p>
+  used so far, so let's get some practice with it.</span></p>
 <ol>
 	<li>
 	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click the Lasso Tool...<br>
@@ -101,10 +101,11 @@ src="7/04.jpg" v:shapes="Picture_x0020_59"></li>
 	- notice that people are now gone, but 
 	that Photopea has continued the line...<br></span>
 	<img border=0 width=837 height=283
-src="7/07.jpg" v:shapes="Picture_x0020_60"><br>The people have vanished, but the line remains</li>
+src="7/07.jpg" v:shapes="Picture_x0020_60"></li>
 </ol>
 <p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
-<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Photopea was able to recognize by looking at the surrounding pixels that the 
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Photopea was 
+to look at the surrounding pixels and recognize that the 
   people do not belong, but since there is a line running through the rest of the 
   image, Photopea continued the line. As a quick aside here, if it did not work 
 for you and you have something like this...</span></p>
@@ -124,16 +125,15 @@ the directions below if Photopea did not remove one or both of your people.</p>
 <ol type="I">
 	<li>
 	<Font face="Times New Roman,serif">Press Ctrl+Z to undo the Fill - this 
-	should place both people back into your image</font>
-</font>
-	<Font face="Times New Roman,serif">
-	<li>
-Press Shift+F5 to reapply the Content Aware Fill
-	</li>
+	should place both people back into your image</font></font><Font face="Times New Roman,serif"><li>
+Press Shift+F5 to reapply the Content Aware Fill</li>
 	<li>
 If 
-	it doesn't work again, try reapplying the Content Aware Fill 
-	several times</li>
+	it doesn't work this time, try reapplying the Content Aware Fill 
+	several times to see if it works (yes, it may work one time and not the next 
+- Photopea reapplies the transformation algorithm each time you apply the fill, 
+so it is possible to get different results through multiple applications with 
+the same selection)</li>
 	<li>
 If 
 	after reapplying the Content Aware Fill multiple times you still do not have 
@@ -141,13 +141,11 @@ If
 	selection area with the Lasso Tool - try to be a little more accurate with 
 	your selection this time</li>
 	<li>
-Press Shift+F5 to reapply the Content Aware Fill
-	</li>
+Press Shift+F5 to reapply the Content Aware Fill</li>
 	<li>
 <Font face="Times New Roman">
 	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
-When the people are gone and the line looks good, press Ctrl+D to deselect the image</span></font>
-	</li></font>
+When the people are gone and the line looks good, press Ctrl+D to deselect the image</span></font></li></font>
 </ol>
 <Font face="Times New Roman,serif">
 <p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Keep in 
@@ -194,7 +192,7 @@ apply the Content Aware Fill, this is what we get...</p>
 	<img border=0 width=596 height=333
 src="7/12.jpg" v:shapes="Picture_x0020_60"></font></p>
 <p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Notice 
-that not only did we not get a picture of the junkyard with the car missing, 
+that not only did we <i>not</i> get a picture of the junkyard with the car missing, 
 but that Photopea simply pulled parts of other cars from around our selection 
 and used them to cover the original car...</p>
 <p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
@@ -202,7 +200,7 @@ and used them to cover the original car...</p>
 	<img border=0 width=596 height=333
 src="7/14.jpg" v:shapes="Picture_x0020_60"></font></p>
 <p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">The 
-point here is that if what we are removing is surrounded by other objects then 
+point here is that if what we are removing is surrounded by other objects, then 
 the Content Aware Fill will not work. But if our subject has pretty much the 
 same thing on both sides...</p>
 <p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
@@ -235,17 +233,15 @@ much easier to use Content Aware Fill to remove the cat and then correct those
 lines using one of the tools we've discussed then it is to try and remove the cat through other means.</p>
 <hr>
 <p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">While 
-Content Aware Fill is an incredibly useful tool, as we have seen it does have 
-some issues. Here are a few things to keep in mind while use Content Aware Fill:</p>
+Content Aware Fill is an incredibly useful technique, as we have seen it does have 
+some issues. Here are a few things to keep in mind while using Content Aware Fill:</p>
 <ol type="A">
 	<li>
 As we showed above with the junkyard image, Photopea has a problem with images 
-	that have lots of different objects and details surrounding your selection
-	</li>
+	that have lots of different objects and details surrounding your selection</li>
 	<li>
 The 
-	larger the object being removed the lower the quality of the final result
-	</li>
+	larger the object being removed the lower the quality of the final result</li>
 	<li>
 
 	Patterns and lines (such as the bricks in the cat photo) may be distorted 
@@ -257,14 +253,13 @@ The
 	<li>
 Even 
 	if the end results are not perfect, using Content Aware Fill can be a quick 
-	and easy first step that allows you to easy clean up the image using any of 
+	and easy first step that allows you to easily clean up the image using any of 
 	the other tools we have covered (fixing the brick lines in the cat image, for 
 	example, is super easy, barely an inconvenience)</li>
 	<li>
 It is 
 	very common for there to be additional clean-up after using Content Aware 
-	Fill, especially if the background is 'busy', so don't be surprised
-	</li>
+	Fill, especially if the background is 'busy', so don't be surprised</li>
 </ol>
 <p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">Let's take 
 a minute now to practice using Content Aware Fill.</p>
